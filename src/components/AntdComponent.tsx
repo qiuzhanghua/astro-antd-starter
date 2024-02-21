@@ -1,6 +1,6 @@
 import React from "react";
 import { Button, DatePicker, ConfigProvider, theme } from "antd";
-import zhCN from 'antd/locale/zh_CN';
+import zhCN from "antd/locale/zh_CN";
 
 const AnButton: React.FC = () => (
   <ConfigProvider
@@ -13,7 +13,12 @@ const AnButton: React.FC = () => (
     }}
     locale={zhCN}
   >
-    <Button className="bg-[#1677ff] text-white" type="primary" size="large" onClick={warn}>
+    <Button
+      className="bg-[#1677ff] text-white"
+      type="primary"
+      size="large"
+      onClick={warn}
+    >
       Button
     </Button>
     <DatePicker></DatePicker>
